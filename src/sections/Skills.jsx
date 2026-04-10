@@ -1,3 +1,5 @@
+import SectionWrapper from "../components/SectionWrapper"
+
 const skillGroups = [
   {
     title: "Programming Languages",
@@ -8,56 +10,55 @@ const skillGroups = [
     items: [
       "OpenCV",
       "NumPy",
-      "face-recognition",
       "Haar Cascade",
       "LBPH",
       "128-D feature vectors",
-      "Euclidean similarity",
       "Cosine similarity",
     ],
   },
   {
-    title: "Embedded Systems",
-    items: [
-      "Arduino",
-      "ESP32",
-      "Raspberry Pi",
-      "Sensor integration",
-      "IoT automation",
-    ],
-  },
-  {
     title: "Web Development",
-    items: ["HTML (basics)"],
+    items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
   },
   {
-    title: "Databases",
-    items: ["SQLite", "MySQL", "SQL pipelines"],
+    title: "Embedded Systems",
+    items: ["Arduino", "ESP32", "Raspberry Pi", "Sensor integration", "IoT automation"],
   },
   {
-    title: "Tools & Platforms",
-    items: ["GitHub", "VS Code", "Arduino IDE", "Eclipse IDE", "Spyder"],
+    title: "Databases & Tools",
+    items: [
+      "MySQL",
+      "SQLite",
+      "GitHub",
+      "VS Code",
+      "Eclipse IDE",
+      "Arduino IDE",
+      "Intel Quartus Prime",
+    ],
   },
 ]
 
 function Skills() {
   return (
-    <section className="bg-slate-950 text-white py-20 px-6">
+    <SectionWrapper id="skills" className="bg-slate-950 px-6 py-24 text-white">
       <div className="mx-auto max-w-6xl">
-        <h2 className="text-3xl font-bold mb-10">Skills</h2>
+        <p className="text-sm uppercase tracking-[0.25em] text-cyan-400">
+          Skills
+        </p>
+        <h2 className="mt-3 text-3xl font-bold sm:text-4xl">Technical Skills</h2>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2">
           {skillGroups.map((group) => (
             <div
               key={group.title}
-              className="rounded-2xl border border-slate-800 bg-slate-900 p-6"
+              className="rounded-2xl border border-blue-500/10 bg-slate-900 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-lg hover:shadow-blue-500/5"
             >
               <h3 className="text-lg font-semibold">{group.title}</h3>
               <div className="mt-4 flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-slate-700 px-3 py-1 text-sm text-slate-300"
+                    className="rounded-full border border-slate-700 bg-slate-950/80 px-3 py-1 text-sm text-slate-300 transition hover:border-cyan-400/40 hover:text-white"
                   >
                     {item}
                   </span>
@@ -67,7 +68,7 @@ function Skills() {
           ))}
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }
 

@@ -1,38 +1,69 @@
+import SectionWrapper from "../components/SectionWrapper"
+
 function About() {
   return (
-    <section id="about" className="bg-slate-900 text-white py-20 px-6">
-      <div className="mx-auto max-w-5xl">
-        <h2 className="text-3xl font-bold mb-6">About Me</h2>
-        <p className="max-w-3xl text-slate-300 leading-8">
-          Eager to contribute to real-world projects in electronics, embedded
-          systems, web development or AI/software development while continuously
-          learning and improving technical skills to gain practical industry
-          exposure.
-        </p>
-
-        <div className="mt-10 grid gap-4 sm:grid-cols-2">
-          <div className="rounded-2xl border border-slate-800 bg-slate-950 p-6">
-            <h3 className="text-lg font-semibold">Education</h3>
-            <p className="mt-3 text-slate-300">
-              B.Tech — Electronics &amp; Communication Engineering
+    <SectionWrapper id="about" className="bg-slate-900 px-6 py-24 text-white">
+      <div className="mx-auto max-w-6xl">
+        <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+          <div>
+            <p className="text-sm uppercase tracking-[0.25em] text-cyan-400">
+              About
             </p>
-            <p className="text-slate-400">VIT, Vellore</p>
-            <p className="text-slate-400">2025 – 2029</p>
-            <p className="mt-2 text-slate-300">GPA: 8.6 / 10 (1st Semester)</p>
+
+            <p className="mt-6 max-w-3xl text-base leading-8 text-slate-300">
+              I am currently pursuing B.Tech in Electronics and Communication
+              Engineering at VIT Vellore. I am deeply interested in AI
+              development, computer vision, embedded systems and web
+              development.
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-400">
+              I enjoy learning by building practical projects that combine
+              software and hardware. My work so far includes a real-time face
+              recognition system, an AI-based smart irrigation project, embedded
+              security systems using Arduino and ESP32 and a React + Tailwind
+              portfolio website.
+            </p>
+
+            <p className="mt-4 max-w-3xl text-base leading-8 text-slate-400">
+              I actively participate in hackathons and technical activities and
+              I am focused on strengthening my technical foundation while
+              building projects that are useful, well-structured and portfolio
+              ready.
+            </p>
           </div>
 
-          <div className="rounded-2xl border border-slate-800 bg-slate-950 p-6">
-            <h3 className="text-lg font-semibold">Focus Areas</h3>
-            <p className="mt-3 text-slate-300">
-              AI/ML, Python, Java, Logic Design, Management
-            </p>
-            <p className="mt-3 text-slate-400">
-              Active participant in hackathons and technical competitions.
-            </p>
+          <div className="grid gap-4">
+            <div className="rounded-2xl border border-blue-500/10 bg-slate-950 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-lg hover:shadow-blue-500/5">
+              <p className="text-sm text-slate-400">Education</p>
+              <h3 className="mt-2 text-lg font-semibold text-white">
+                VIT Vellore
+              </h3>
+              <p className="mt-2 text-slate-300">
+                B.Tech — Electronics &amp; Communication Engineering
+              </p>
+              <p className="mt-1 text-slate-400">2025 – 2029</p>
+            </div>
+
+            <div className="rounded-2xl border border-blue-500/10 bg-slate-950 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-lg hover:shadow-blue-500/5">
+              <p className="text-sm text-slate-400">Academic Performance</p>
+              <h3 className="mt-2 text-lg font-semibold text-white">
+                GPA: 8.6 / 10
+              </h3>
+              <p className="mt-2 text-slate-400">1st Semester</p>
+            </div>
+
+            <div className="rounded-2xl border border-blue-500/10 bg-slate-950 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 hover:shadow-lg hover:shadow-blue-500/5">
+              <p className="text-sm text-slate-400">Core Interests</p>
+              <p className="mt-2 text-slate-300">
+                AI development, web development, Java, Python, Logic Design,
+                Embedded Systems and IoT
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }
 
