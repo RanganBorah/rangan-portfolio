@@ -20,7 +20,8 @@ function About() {
             <p className="mt-4 max-w-3xl text-base leading-8 text-slate-400">
               I enjoy learning by building practical projects that combine
               software and hardware. My work so far includes a real-time face
-              recognition system, an AI-based smart irrigation project, embedded
+              recognition system, Moodora AI for mood-based music
+              recommendation, Aparupa AI-based smart irrigation, embedded
               security systems using Arduino and ESP32 and a React + Tailwind
               portfolio website.
             </p>

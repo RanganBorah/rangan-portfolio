@@ -3,7 +3,7 @@ import SectionWrapper from "../components/SectionWrapper"
 const skillGroups = [
   {
     title: "Programming Languages",
-    items: ["Python", "Java"],
+    items: ["Python", "Java", "JavaScript"],
   },
   {
     title: "AI & Machine Learning",
@@ -14,15 +14,39 @@ const skillGroups = [
       "LBPH",
       "128-D feature vectors",
       "Cosine similarity",
+      "MediaPipe Face Landmarker",
+      "Emotion Recognition",
     ],
   },
   {
     title: "Web Development",
-    items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS"],
+    items: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Tailwind CSS",
+      "Vite",
+      "Responsive UI",
+    ],
+  },
+  {
+    title: "Music & API Integration",
+    items: [
+      "Spotify Web API",
+      "Spotify Web Playback SDK",
+      "Mood-based Recommendation",
+    ],
   },
   {
     title: "Embedded Systems",
-    items: ["Arduino", "ESP32", "Raspberry Pi", "Sensor integration", "IoT automation"],
+    items: [
+      "Arduino",
+      "ESP32",
+      "Raspberry Pi",
+      "Sensor integration",
+      "IoT automation",
+    ],
   },
   {
     title: "Databases & Tools",
@@ -34,6 +58,7 @@ const skillGroups = [
       "Eclipse IDE",
       "Arduino IDE",
       "Intel Quartus Prime",
+      "Vercel",
     ],
   },
 ]

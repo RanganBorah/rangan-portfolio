@@ -17,8 +17,23 @@ const projects = [
     live: "https://irately-curliest-dennis.ngrok-free.dev",
   },
   {
+    title: "Moodora AI",
+    stack:
+      "React • Vite • JavaScript • MediaPipe • Spotify Web API • Spotify Web Playback SDK • Vercel",
+    description:
+      "A real-time emotion-based music recommendation web application that detects facial expressions and plays music according to the user’s mood using Spotify.",
+    points: [
+      "Built real-time face detection and emotion recognition using MediaPipe Face Landmarker",
+      "Mapped detected moods such as happy, neutral, angry and surprised to Spotify playlists",
+      "Integrated Spotify Web Playback SDK with browser playback controls",
+      "Added manual mood selection and responsive UI for a smoother user experience",
+    ],
+    github: "https://github.com/RanganBorah/Moodora-AI",
+    live: "https://moodora-ai.vercel.app/",
+  },
+  {
     title: "React + Tailwind Portfolio Website",
-    stack: "React • Tailwind CSS • Vite • GitHub",
+    stack: "React • Tailwind CSS • Vite • GitHub • Vercel",
     description:
       "A personal portfolio website built to present my resume, skills, projects and contact details in a professional format.",
     points: [
@@ -27,9 +42,10 @@ const projects = [
       "Structured the website for GitHub version control and public deployment",
       "Focused on clean UI, professional presentation and portfolio readiness",
     ],
+    github: "https://github.com/RanganBorah/rangan-portfolio",
   },
   {
-    title: "AI-Based Smart Irrigation System",
+    title: "Aparupa -AI-Based Smart Irrigation System",
     stack: "Arduino • ESP32 • Sensors • IoT",
     description:
       "An intelligent irrigation system using environmental and soil data to automate watering decisions.",
@@ -39,6 +55,8 @@ const projects = [
       "Implemented automation workflow on ESP32 for efficient irrigation control",
       "Focused on practical IoT-based problem solving for agriculture use cases",
     ],
+    github:
+      "https://github.com/RanganBorah/Aparupa-AI-Based-Smart-Irrigation-System",
   },
   {
     title: "Passcode-Based Electronic Security System",
@@ -51,6 +69,8 @@ const projects = [
       "Demonstrated hardware-software integration in an embedded project",
       "Focused on clean practical logic implementation using microcontroller components",
     ],
+    github:
+      "https://github.com/RanganBorah/Passcode-based-Electronic-Security-System",
   },
   {
     title: "Half Adder Circuit",
